@@ -51,7 +51,7 @@ if st.button("Analyze Transaction Risk 🔍", type="primary"):
     with st.spinner("ML Engine scanning the transaction..."):
         
         
-        API_URL = "https://stripe-fraud-api-xyz.onrender.com/predict" 
+        API_URL = "https://stripe-fraud-api.onrender.com/predict" 
         
         try:
             response = requests.post(API_URL, json=payload)
