@@ -57,7 +57,6 @@ if st.button("Analyze Transaction Risk 🔍", type="primary"):
             response = requests.post(API_URL, json=payload)
             if response.status_code == 200:
                 result = response.json()
-                
                 status = result.get("transaction_status")
                 action = result.get("action")
                 
