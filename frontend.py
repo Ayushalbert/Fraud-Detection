@@ -51,7 +51,7 @@ def load_sample_templates():
     if st.button("Analyze Transaction Risk 🔍", type="primary"):
         with st.spinner("ML Engine scanning the transaction..."):
             # Local FastAPI URL (Update this when deploying to production)
-            API_URL = "http://localhost:8000/predict"
+            API_URL = "https://stripe-fraud-api.onrender.com/"
             
             try:
                 response = requests.post(API_URL, json=payload)
