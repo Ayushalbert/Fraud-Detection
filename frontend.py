@@ -18,6 +18,8 @@ def load_sample_templates():
         'V25': 0.128, 'V26': -0.189, 'V27': 0.133, 'V28': -0.021, 'Amount': 149.62
     }
     # An extreme outlier row that Isolation Forest will 100% catch as Anomaly
+   # An extreme outlier row that Isolation Forest will 100% catch
+    # An extreme outlier row that Isolation Forest will 100% catch
     fraud_row = {
         'Time': 100.0, 'V1': -10.5, 'V2': 8.2, 'V3': -15.4, 'V4': 8.5, 
         'V5': -9.1, 'V6': -3.2, 'V7': -12.5, 'V8': 7.1, 'V9': -6.3, 
